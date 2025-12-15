@@ -1,0 +1,108 @@
+{
+  "contactBar": {
+    "contactItems": [
+      {
+        "type": "email",
+        "label": "sumeetgoenka24@gmail.com",
+        "icon": "/images/icon/mail-icon.svg",
+        "link": "mailto:sumeetgoenka24@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+91 7014700834",
+        "icon": "/images/icon/call-icon.svg",
+        "link": "tel:+917014700834"
+      },
+      {
+        "type": "website",
+        "label": "linkedin.com/in/sumeet-goenka",
+        "icon": "/images/icon/web-icon.svg",
+        "link": "https://linkedin.com/in/sumeet-goenka"
+      }
+    ],
+    "socialItems": [
+      {
+        "platform": "linkedin",
+        "icon": "/images/icon/linkedin-icon.svg",
+        "link": "https://linkedin.com/in/sumeet-goenka"
+      },
+      {
+        "platform": "github",
+        "icon": "/images/icon/github-icon.svg",
+        "link": "https://github.com/sumeet-goenka"
+      }
+    ]
+  },
+  "educationData": {
+    "education": [
+      {
+        "title": "Master of Computer Applications (M.C.A)",
+        "year": "2023 - 2025",
+        "institution": "Chandigarh University",
+        "description": "Completed post-graduation with a focus on advanced software development, cloud architecture, and full-stack system design."
+      },
+      {
+        "title": "Bachelor of Computer Applications (B.C.A)",
+        "year": "2018 - 2021",
+        "institution": "Mahaveer College of Commerce",
+        "description": "Graduated with 74%, building a strong foundation in database management and web development."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Laravel",
+        "icon": "/images/home/education-skill/laravel-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "PHP",
+        "icon": "/images/home/education-skill/php-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "MySQL",
+        "icon": "/images/home/education-skill/mysql-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Next.js",
+        "icon": "/images/home/education-skill/nextjs-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/images/home/education-skill/js-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "RESTful APIs",
+        "icon": "/images/home/education-skill/api-icon.svg",
+        "rating": 5
+      }
+    ]
+  },
+  "contactLinks": {
+    "socialLinks": [
+      {
+        "title": "LinkedIn",
+        "href": "https://linkedin.com/in/sumeet-goenka"
+      },
+      {
+        "title": "GitHub",
+        "href": "#"
+      }
+    ],
+    "contactInfo": [
+      {
+        "type": "email",
+        "label": "sumeetgoenka24@gmail.com",
+        "link": "mailto:sumeetgoenka24@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+91 70147 00834",
+        "link": "tel:+917014700834"
+      }
+    ]
+  }
+}
