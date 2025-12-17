@@ -3,8 +3,16 @@ import { getDataPath } from "@/utils/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+interface Project {
+  client: string;
+  slug: string;
+  title: string;
+  description: string;
+  tech?: string;
+}
+
 const LatestWork = () => {
-  const [workData, setWorkData] = useState([]);
+  const [workData, setWorkData] = useState<Project[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,7 +36,7 @@ const LatestWork = () => {
           <p className="text-xl text-primary font-mono">( 04 )</p>
         </div>
 
-        {/* Project List - Clean Text Design */}
+        {/* Project List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {workData.map((project, index) => (
             <div
@@ -40,11 +48,21 @@ const LatestWork = () => {
                   <span className="text-xs font-bold uppercase tracking-widest text-primary/60">
                     {project.client}
                   </span>
+
                   <Link href={`/projects/${project.slug}`}>
                     <div className="p-2 rounded-full bg-white group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1="7" y1="17" x2="17" y2="7" />
+                        <polyline points="7 7 17 7 17 17" />
                       </svg>
                     </div>
                   </Link>
@@ -58,10 +76,12 @@ const LatestWork = () => {
                   {project.description}
                 </p>
 
-                {/* Tech Badges */}
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-200/60">
-                  {project.tech?.split(',').map((tech, i) => (
-                    <span key={i} className="text-[11px] font-bold text-gray-500 bg-gray-200/50 px-2 py-1 rounded">
+                  {project.tech?.split(",").map((tech, i) => (
+                    <span
+                      key={i}
+                      className="text-[11px] font-bold text-gray-500 bg-gray-200/50 px-2 py-1 rounded"
+                    >
                       {tech.trim()}
                     </span>
                   ))}
