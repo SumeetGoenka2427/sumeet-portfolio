@@ -32,7 +32,7 @@ const AboutMe = () => {
             </div>
 
             <div className="pt-10 xl:pt-16 flex flex-col lg:flex-row gap-10 items-center justify-between">
-              <div className="w-full max-w-[303px] h-auto lg:h-[440px] flex justify-center">
+              <div className="w-full max-w-[303px] h-auto lg:h-[440px] flex justify-center hidden lg:flex">
                 <Image
                   src={getImgPath("/images/home/about-me/about-banner-img.svg")}
                   alt="Sumeet Goenka - Full Stack Developer"
@@ -41,6 +41,7 @@ const AboutMe = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
+
 
               <div className="w-full lg:max-w-2xl flex-1 text-center lg:text-left">
                 {/* Updated bio to include React & Node.js */}
