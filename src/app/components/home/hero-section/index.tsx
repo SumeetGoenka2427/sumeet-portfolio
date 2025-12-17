@@ -34,12 +34,11 @@ const Hero = () => {
               seamless, user-centric solutions.
             </p>
 
-            {/* CTA Button Example (Recommended for Portfolios) */}
-            <div className="mt-4">
+            {/* <div className="mt-4">
                <a href="#contact" className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition">
                  View My Work
                </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Image for Mobile/Tablet (Shows below text on small screens) */}

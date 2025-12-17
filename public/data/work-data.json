@@ -1,40 +1,32 @@
 {
   "workData": [
     {
-      "image": "/images/work/work-img-1.jpg",
-      "title": "Mug Sticker Designing",
-      "client": "John Honnai",
-      "slug": "mug-sticker-designing"
+      "title": "Multi-Tenant Survey CXM SaaS",
+      "client": "NPCI, Federal Bank, IDFC, BlueDart",
+      "slug": "survey-cxm",
+      "tech": "SaaS Architecture, Laravel, Livewire, Node.js, Python",
+      "description": "Designed and deployed 10+ multi-tenant instances for major enterprise clients including Edelweiss, LTFS, and NPCI. Built a centralized engine for high-concurrency survey management with real-time analytics."
     },
     {
-      "image": "/images/work/work-img-2.jpg",
-      "title": "Mobile App Design",
-      "client": "John Honnai",
-      "slug": "mobile-app-design"
+      "title": "Lead Management System",
+      "client": "Healthcare & Ferty9",
+      "slug": "hospital-lms",
+      "tech": "Laravel, React, Automated Workflows",
+      "description": "Implemented an automated patient lead tracking system with custom schedulers and integrated SMS/Email reminders to boost conversion rates."
     },
     {
-      "image": "/images/work/work-img-3.jpg",
-      "title": "Fashion Website Template",
-      "client": "John Honnai",
-      "slug": "fashion-website-template"
+      "title": "Mustache Room Booking",
+      "client": "Mustache Stays",
+      "slug": "mustache-booking",
+      "tech": "Payment Gateway, Laravel",
+      "description": "End-to-end room reservation system featuring seamless third-party payment integration and dynamic pricing logic for hospitality management."
     },
     {
-      "image": "/images/work/work-img-4.jpg",
-      "title": "Book Cover Design",
-      "client": "John Honnai",
-      "slug": "book-cover-design"
-    },
-    {
-      "image": "/images/work/work-img-5.jpg",
-      "title": "Mobile App Design",
-      "client": "John Honnai",
-      "slug": "mobile-app-design"
-    },
-    {
-      "image": "/images/work/work-img-6.jpg",
-      "title": "Mug Sticker Designing",
-      "client": "John Honnai",
-      "slug": "mug-sticker-designing"
+      "title": "ERP: Gemstone Manufacturing",
+      "client": "Ratan Bhandar",
+      "slug": "ratan-bhandar",
+      "tech": "Inventory, Laravel, React",
+      "description": "A comprehensive enterprise solution monitoring gem production from raw stone procurement to final global sales and inventory tracking."
     }
   ]
 }
