@@ -42,40 +42,37 @@ const AboutMe = () => {
                 />
               </div>
 
-
-              <div className="w-full lg:max-w-2xl flex-1 text-center lg:text-left">
-                {/* Updated bio to include React & Node.js */}
+              <div className="w-full lg:max-w-2xl flex-1 text-left">
                 <p className="text-lg text-secondary leading-relaxed">
-                  I am a <strong>Full Stack Developer</strong> and <strong>MCA Graduate</strong> with 3+ years of experience bridging the gap between robust backend architecture and modern frontend experiences. While my core expertise is rooted in <strong>Laravel and MySQL</strong>, I am deeply focused on the JavaScript ecosystem, building high-performance applications with <strong>React, Next.js, and Node.js</strong>.
-                </p>
-                <p className="text-lg text-secondary mt-4 leading-relaxed">
-                  I specialize in scaling SaaS platforms—from optimizing complex database queries to implementing real-time features. My goal is to build clean, secure codebases that deliver seamless user experiences across the entire stack.
+                  I am a <strong>Full Stack Developer</strong> and <strong>MCA Graduate</strong> with over{" "}
+                  <strong>3 years of experience</strong> (May 2022 – Present) building scalable web
+                  applications and SaaS platforms. My core expertise is in{" "}
+                  <strong>Laravel, Livewire, and MySQL</strong>, with a strong focus on performance,
+                  security, and clean architecture.
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 py-10 xl:py-16 gap-8 border-b border-mistGray">
-                  {stats.map((item, i) => (
-                    <div key={i} className="flex flex-col items-center lg:items-start">
-                      <h3 className="text-4xl md:text-5xl font-bold text-primary">{item.count}</h3>
-                      <p className="text-base md:text-lg text-dark mt-1">
-                        {item.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-lg text-secondary mt-3 leading-relaxed">
+                  I am also expanding my skills in the{" "}
+                  <strong>modern JavaScript ecosystem</strong>, working with{" "}
+                  <strong>React, Next.js, and Node.js</strong> to build seamless, user-centric
+                  full-stack solutions.
+                </p>
 
-                <div className="pt-8 xl:pt-14 flex flex-col sm:flex-row items-center gap-4 lg:justify-start">
+                <div className="pt-8 flex flex-col sm:flex-row items-start gap-4">
                   <div className="flex items-center gap-3.5">
                     <Image
                       src={getImgPath("/images/icon/lang-icon.svg")}
-                      alt="lang-icon"
+                      alt="Tech focus"
                       width={30}
                       height={30}
                     />
-                    <p className="text-base xl:text-xl font-semibold text-dark">Tech Focus:</p>
+                    <p className="text-base xl:text-lg font-semibold text-dark">
+                      Tech Focus:
+                    </p>
                   </div>
-                  {/* Added Node and React to the prominent tags */}
-                  <div className="flex flex-wrap justify-center items-center gap-2.5">
-                    {["PHP", "Node.js", "React", "Next.js", "Laravel"].map((tech) => (
+
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    {["Laravel", "Livewire", "MySQL", "PHP","React", "Node.js"].map((tech) => (
                       <span
                         key={tech}
                         className="bg-white shadow-sm border border-gray-100 py-2 px-5 rounded-full text-sm md:text-base font-medium text-secondary"
@@ -86,6 +83,7 @@ const AboutMe = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
