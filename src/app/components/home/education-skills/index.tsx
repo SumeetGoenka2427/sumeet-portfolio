@@ -36,50 +36,113 @@ const EducationSkills = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-            {/* Education */}
+            {/* Background */}
             <div>
-              <p className="text-sm uppercase tracking-wide text-black/50 mb-4">
+              <p className="text-sm uppercase tracking-wide text-black/50 mb-5">
                 Background
               </p>
 
               <div className="space-y-4">
-                {educationData?.education?.map((item: any, index: number) => (
-                  <div key={index}>
-                    <h5 className="text-lg font-medium text-black">
-                      {item.title}
-                    </h5>
-                    <p className="text-black/60">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
+                {educationData?.education?.map(
+                  (item: any, index: number) => (
+                    <div key={index}>
+                      <h5 className="text-lg font-medium text-black">
+                        {item.title}
+                      </h5>
+                      <p className="text-black/60">
+                        {item.description}
+                      </p>
+                    </div>
+                  )
+                )}
               </div>
             </div>
 
             {/* Skills */}
             <div>
-              <p className="text-sm uppercase tracking-wide text-black/50 mb-4">
+              <p className="text-sm uppercase tracking-wide text-black/50 mb-5">
                 Core Skills
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                {educationData?.skills?.map((skill: any, index: number) => (
-                  <span
-                    key={index}
-                    className="
-                      px-4 py-2
-                      border border-black/10
-                      rounded-md
-                      text-sm
-                      font-medium
-                      text-black/70
-                      bg-white
-                    "
-                  >
-                    {skill.name}
+              <div className="space-y-5">
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Frontend
                   </span>
-                ))}
+                  <p className="text-sm text-black/70">
+                    React, Next.js, HTML, CSS, Responsive UI
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Backend
+                  </span>
+                  <p className="text-sm text-black/70">
+                    Laravel, PHP, Node.js, Golang
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    APIs
+                  </span>
+                  <p className="text-sm text-black/70">
+                    REST APIs, AJAX, FastAPI
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Databases
+                  </span>
+                  <p className="text-sm text-black/70">
+                    MySQL, PostgreSQL, Query optimization
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Cloud
+                  </span>
+                  <p className="text-sm text-black/70">
+                    AWS (EC2), Lambda functions
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    DevOps
+                  </span>
+                  <p className="text-sm text-black/70">
+                    Docker, Git, GitHub, CI/CD basics
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Deployment
+                  </span>
+                  <p className="text-sm text-black/70">
+                    Vercel, Linux servers, environment setup
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <span className="text-sm font-medium text-black min-w-[120px]">
+                    Third-Party
+                  </span>
+                  <p className="text-sm text-black/70">
+                    SMS, Email, Payment gateways
+                  </p>
+                </div>
+
               </div>
+
+              {/* Freelance reassurance */}
+              <p className="mt-6 text-sm text-black/50">
+                Comfortable working independently or alongside existing teams.
+              </p>
             </div>
 
           </div>
