@@ -1,4 +1,5 @@
 "use client";
+
 import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,7 @@ const ContactBar = () => {
         const data = await res.json();
         setContactBarData(data?.contactBar);
       } catch (error) {
-        console.error("Error fetching services:", error);
+        console.error("Error fetching contact bar data:", error);
       }
     };
 
@@ -23,66 +24,83 @@ const ContactBar = () => {
   }, []);
 
   return (
-    <section>
-      <div className="border-t border-softGray">
-        <div className="container">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 md:py-7">
-            {/* Contact Items */}
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 md:gap-5 lg:gap-11">
-              {contactBarData?.contactItems?.map(
-                (value: any, index: number) => (
-                  <Link
-                    key={index}
-                    onClick={(e) => e.preventDefault()}
-                    href={"#!"}
-                    className="flex items-center gap-2 lg:gap-4 text-sm md:text-base"
-                  >
-                    <Image
-                      src={getImgPath(value?.icon)}
-                      alt={value?.type}
-                      width={24}
-                      height={24}
-                      className="min-w-[24px] min-h-[24px]"
-                    />
+    <section className="border-t border-black/10">
+      <div className="container">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-5">
 
-                    <h6 className="text-sm md:text-base xl:text-xl hover:text-primary">
-                      {value?.label}
-                    </h6>
-                  </Link>
-                )
-              )}
-            </div>
+          {/* Contact Items */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4">
 
-            {/* Social Items */}
-            <div className="flex items-center justify-center md:justify-end gap-4 md:gap-2.5">
-              {contactBarData?.socialItems?.map(
-                (
-                  value: {
-                    platform: string;
-                    icon: string;
-                    link: string;
-                  },
-                  index: number
-                ) => (
-                  <Link
+            {contactBarData?.contactItems?.map(
+              (item: any, index: number) => {
+                const href =
+                  item.type === "email"
+                    ? `mailto:${item.value}`
+                    : item.type === "phone"
+                      ? `tel:${item.value}`
+                      : item.type === "whatsapp"
+                        ? `https://wa.me/${item.value}`
+                        : null;
+
+                if (!href) return null;
+
+                return (
+                  <a
                     key={index}
-                    href={value.link}
-                    target="_blank"
+                    href={href}
+                    target={item.type === "whatsapp" ? "_blank" : undefined}
                     rel="noopener noreferrer"
-                    aria-label={value.platform}
+                    className="
+                      flex items-center gap-2
+                      text-sm md:text-base
+                      text-black/70
+                      hover:text-black
+                      transition
+                    "
                   >
                     <Image
-                      src={value.icon}
-                      alt={value.platform}
-                      width={30}
-                      height={30}
-                      className="hover:opacity-80"
+                      src={getImgPath(item.icon)}
+                      alt={item.label}
+                      width={20}
+                      height={20}
                     />
-                  </Link>
-                )
-              )}
-            </div>
+                    <span>{item.label}</span>
+                  </a>
+                );
+              }
+            )}
           </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-3">
+            {contactBarData?.socialItems?.map(
+              (
+                item: {
+                  platform: string;
+                  icon: string;
+                  link: string;
+                },
+                index: number
+              ) => (
+                <Link
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.platform}
+                  className="opacity-70 hover:opacity-100 transition"
+                >
+                  <Image
+                    src={item.icon}
+                    alt={item.platform}
+                    width={22}
+                    height={22}
+                  />
+                </Link>
+              )
+            )}
+          </div>
+
         </div>
       </div>
     </section>

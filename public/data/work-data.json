@@ -1,32 +1,52 @@
 {
   "workData": [
     {
-      "title": "Multi-Tenant Survey CXM SaaS",
+      "title": "Business Website with Admin Dashboard",
+      "client": "AmerQuick Plus (UAE)",
+      "slug": "amerquickplus",
+      "tech": "Website, Admin Panel, Lead Management",
+      "description": "Developed a business website with backend tools for managing leads, content, and service inquiries.",
+      "liveUrl": "https://amerquickplus.ae/"
+    },
+    {
+      "title": "Travel & Content Platform",
+      "client": "YatraQuest",
+      "slug": "yatraquest",
+      "tech": "Content Management, SEO",
+      "description": "Created a content-driven travel website with admin-managed blogs, categories, and SEO-friendly pages.",
+      "liveUrl": "https://yatraquest.com"
+    },
+    {
+      "title": "E-commerce Store",
+      "client": "Aurasya",
+      "slug": "aurasya-shop",
+      "tech": "E-commerce, Payments, Admin Panel",
+      "description": "Developed a complete e-commerce platform with product management, orders, and secure online payments.",
+      "liveUrl": "https://aurasya.shop"
+    },
+    {
+      "title": "Corporate Website & Admin Platform",
+      "client": "QDegrees",
+      "slug": "qdegrees",
+      "tech": "CMS, Blogs, Admin Panels",
+      "description": "Built and maintained a corporate website with admin control for blogs, career listings, and lead management.",
+      "liveUrl": "https://qdegrees.com"
+    },
+    {
+      "title": "Enterprise Survey & CXM Platform",
       "client": "NPCI, Federal Bank, IDFC, BlueDart",
       "slug": "survey-cxm",
-      "tech": "SaaS Architecture, Laravel, Livewire, Node.js, Python",
-      "description": "Designed and deployed 10+ multi-tenant instances for major enterprise clients including Edelweiss, LTFS, and NPCI. Built a centralized engine for high-concurrency survey management with real-time analytics."
+      "tech": "Multi-tenant systems, Dashboards, APIs",
+      "description": "Built and maintained a large-scale survey and customer experience platform used by multiple enterprise clients, focusing on performance, scalability, and reliable data collection.",
+      "confidential": true
     },
     {
-      "title": "Lead Management System",
-      "client": "Healthcare & Ferty9",
-      "slug": "hospital-lms",
-      "tech": "Laravel, React, Automated Workflows",
-      "description": "Implemented an automated patient lead tracking system with custom schedulers and integrated SMS/Email reminders to boost conversion rates."
-    },
-    {
-      "title": "Mustache Room Booking",
-      "client": "Mustache Stays",
-      "slug": "mustache-booking",
-      "tech": "Payment Gateway, Laravel",
-      "description": "End-to-end room reservation system featuring seamless third-party payment integration and dynamic pricing logic for hospitality management."
-    },
-    {
-      "title": "ERP: Gemstone Manufacturing",
-      "client": "Ratan Bhandar",
-      "slug": "ratan-bhandar",
-      "tech": "Inventory, Laravel, React",
-      "description": "A comprehensive enterprise solution monitoring gem production from raw stone procurement to final global sales and inventory tracking."
+      "title": "Lead & CRM Management System",
+      "client": "Healthcare & Fertility Clinics",
+      "slug": "lead-management",
+      "tech": "Automation, Workflows, Integrations",
+      "description": "Developed an internal lead and CRM system to manage inquiries, automate follow-ups, and streamline daily operations for healthcare teams.",
+      "confidential": true
     }
   ]
 }

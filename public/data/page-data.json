@@ -70,6 +70,16 @@
         "rating": 3
       },
       {
+        "name": "React.js",
+        "icon": "/images/home/education-skill/nextjs-icon.svg",
+        "rating": 3
+      },
+      {
+        "name": "Node.js",
+        "icon": "/images/home/education-skill/nextjs-icon.svg",
+        "rating": 3
+      },
+      {
         "name": "JavaScript",
         "icon": "/images/home/education-skill/js-icon.svg",
         "rating": 4

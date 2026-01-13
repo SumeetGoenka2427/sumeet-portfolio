@@ -4,70 +4,105 @@ import Image from "next/image";
 import { getImgPath } from "@/utils/image";
 
 const Hero = () => {
-  const handleDownloadPDF = () => {
-    window.print();
-  };
+  const resumeUrl = "/resume/Sumeet-Goenka-Resume.pdf";
+
+  const whatsappNumber = "917014700834";
+  const whatsappMessage =
+    "Hi Sumeet, I reviewed your portfolio and would like to connect.";
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   return (
     <section className="relative hero-section overflow-hidden min-h-screen pt-12 pb-12 lg:pb-30">
-
       <div className="container mx-auto px-4 pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-          {/* Text Content */}
-          <div className="flex flex-col gap-4 md:gap-6 max-w-2xl z-10 text-center lg:text-left items-center lg:items-start">
-            <div>
-              <div className="flex items-center justify-center lg:justify-start gap-4 md:gap-8 mb-2">
-                <h1 className="text-4xl md:text-6xl font-bold">
-                  I'm Sumeet
-                </h1>
-                <div className="wave w-10 h-10 md:w-16 md:h-16">
-                  <Image
-                    src={getImgPath("/images/home/banner/wave-icon.svg")}
-                    alt="wave-icon"
-                    width={62}
-                    height={62}
-                  />
-                </div>
-              </div>
+          {/* Text */}
+          <div className="flex flex-col gap-6 max-w-2xl z-10 text-center lg:text-left items-center lg:items-start">
 
-              <h2 className="text-3xl md:text-5xl font-semibold text-primary">
-                Full Stack Developer
-              </h2>
+            <div className="flex items-center gap-4">
+              <h1 className="text-4xl md:text-6xl font-bold">
+                Hi, I’m Sumeet
+              </h1>
+              <Image
+                src={getImgPath("/images/home/banner/wave-icon.svg")}
+                alt="wave"
+                width={40}
+                height={40}
+              />
             </div>
 
-            <p className="text-secondary max-w-md xl:max-w-xl text-base md:text-lg">
-              Specializing in building scalable SaaS platforms and high-performance web applications.
-              With 3+ years of experience in Laravel and MySQL, I focus on delivering
-              seamless, user-centric solutions.
+            <h2 className="text-3xl md:text-5xl font-semibold text-primary">
+              Full Stack Developer
+            </h2>
+
+            <p className="text-secondary max-w-xl text-base md:text-lg">
+              I design and build fast, reliable websites and web applications for startups
+              and growing businesses, with a strong focus on performance, clean design,
+              and great user experience.
             </p>
 
-            {/* PDF DOWNLOAD BUTTON IN HERO */}
-            <button
-              onClick={handleDownloadPDF}
-              aria-label="Download PDF Resume"
-              title="Download PDF Resume"
-              className="mt-4 group flex items-center gap-3 border border-primary px-6 py-3 rounded-full hover:bg-primary transition"
-            >
-              <span className="text-primary group-hover:text-white transition">
-                Download Resume
-              </span>
+            {/* Minimal CTA */}
+            <div className="w-full mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-5 h-5 text-primary group-hover:text-white transition"
+              {/* Primary */}
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+      w-full sm:w-auto
+      px-6 py-3.5
+      rounded-lg
+      bg-black text-white
+      font-medium
+      text-center
+      hover:bg-black/90
+      transition
+    "
               >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-            </button>
+                Chat on WhatsApp
+              </a>
+
+              {/* Secondary */}
+              <a
+                href="#projects"
+                className="
+      w-full sm:w-auto
+      px-6 py-3.5
+      rounded-lg
+      border border-black/20
+      text-black
+      font-medium
+      text-center
+      hover:border-black
+      transition
+    "
+              >
+                View Projects
+              </a>
+
+              {/* Tertiary */}
+              <a
+                href={resumeUrl}
+                download
+                className="
+      w-full sm:w-auto
+      px-6 py-3.5
+      rounded-lg
+      text-black/70
+      font-medium
+      text-center
+      hover:text-black
+      transition
+    "
+              >
+                Download Resume
+              </a>
+
+            </div>
 
           </div>
 
@@ -89,7 +124,7 @@ const Hero = () => {
       <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block lg:w-1/2 xl:w-[45%]">
         <Image
           src={getImgPath("/images/home/banner/banner-img.png")}
-          alt="banner-img"
+          alt="Sumeet Goenka"
           width={685}
           height={650}
         />
