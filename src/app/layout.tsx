@@ -10,9 +10,11 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Resume - Sumeet Goenka",
-  description: "Sumeet Resume",
+  title: "Sumeet Goenka | Full Stack Developer & Freelance Web Developer",
+  description:
+    "Full Stack Developer with 3+ years of experience building modern websites and web applications for startups and growing businesses. Specialized in React, Next.js, backend systems, and scalable solutions.",
 };
+
 
 export default function RootLayout({
   children,
