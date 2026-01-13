@@ -9,14 +9,6 @@
       "liveUrl": "https://amerquickplus.ae/"
     },
     {
-      "title": "Travel & Content Platform",
-      "client": "YatraQuest",
-      "slug": "yatraquest",
-      "tech": "Content Management, SEO",
-      "description": "Created a content-driven travel website with admin-managed blogs, categories, and SEO-friendly pages.",
-      "liveUrl": "https://yatraquest.com"
-    },
-    {
       "title": "E-commerce Store",
       "client": "Aurasya",
       "slug": "aurasya-shop",
@@ -31,6 +23,14 @@
       "tech": "CMS, Blogs, Admin Panels",
       "description": "Built and maintained a corporate website with admin control for blogs, career listings, and lead management.",
       "liveUrl": "https://qdegrees.com"
+    },
+    {
+      "title": "Travel & Content Platform",
+      "client": "YatraQuest",
+      "slug": "yatraquest",
+      "tech": "Content Management, SEO",
+      "description": "Created a content-driven travel website with admin-managed blogs, categories, and SEO-friendly pages.",
+      "liveUrl": "https://yatraquest.com"
     },
     {
       "title": "Enterprise Survey & CXM Platform",

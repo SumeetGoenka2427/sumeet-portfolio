@@ -85,7 +85,7 @@ const Hero = () => {
               </a>
 
               {/* Tertiary */}
-              <a
+              {/* <a
                 href={resumeUrl}
                 download
                 className="
@@ -100,7 +100,7 @@ const Hero = () => {
     "
               >
                 Download Resume
-              </a>
+              </a> */}
 
             </div>
 
